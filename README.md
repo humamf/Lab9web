@@ -30,7 +30,15 @@ Untuk menjalankan MySQL Server dari menu XAMPP Control seperti berikut.
 1. Buat file dengan nama `header.php`
 2. Tambahkan kode berikut.
 
-```html
+```php
+<?php
+include("koneksi.php");
+
+// query untuk menampilkan data
+$sql = 'SELECT * FROM data_barang';
+$result = mysqli_query($conn, $sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,16 +51,12 @@ Untuk menjalankan MySQL Server dari menu XAMPP Control seperti berikut.
 <body>
     <div class="container">
         <header>
-            <h1>Modularisasi Menggunakan Require</h1>
+            <h1>Data Barang</h1>
         </header>
-    </div>
-    <nav>
-        <a href="home.php">Home</a>
-        <a href="about.php">About</a>
-        <a href="kontak.php">Kontak</a>
-    </nav>
-</body>
-</html>
+        <nav>
+            <a href="home.php">Home</a>
+            <a href="tambah.php">Tambah Barang</a>
+        </nav>
 ```
 
 ## 4. Membuat File Footer
@@ -62,7 +66,7 @@ Untuk menjalankan MySQL Server dari menu XAMPP Control seperti berikut.
 
 ```html
     <footer>
-        <p>&copy; 2022, Informatika, Humam Fathurrahman</p>
+        <p>&copy; 2022 | Humam Fathurrahman</p>
     </footer>
 </body>
 </html>
