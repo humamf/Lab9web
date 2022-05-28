@@ -17,7 +17,7 @@ Untuk menjalankan MySQL Server dari menu XAMPP Control seperti berikut.
 ## 2. Membuat Folder Baru
 
 1. Membuat folder `Lab9web` di direktori htdocs
-2. Lalu buat file dengan nama `lab9_php_modular` , kemudian tambahakan seperti berikut.
+2. Lalu buat file dengan nama `lab9_php_modular` , kemudian tambahkan seperti berikut.
 
 ![File](gambar/file.png)
 
@@ -88,6 +88,10 @@ $result = mysqli_query($conn, $sql);
 <?php require('footer.php')?>
 ```
 
+Untuk halaman **Home** tampilannya seperti berikut.
+
+![HasilHome](gambar/hasilhome.png)
+
 ## 6. Membuat File About
 
 1. Buat file dengan nama `about.php`
@@ -103,12 +107,6 @@ $result = mysqli_query($conn, $sql);
 
 <?php require('footer.php'); ?>
 ```
-
-# Berikut tampilannya.
-
-Untuk halaman **Home** tampilannya seperti berikut.
-
-![HasilHome](gambar/hasilhome.png)
 
 Untuk halaman **About** tampilannya seperti berikut.
 
